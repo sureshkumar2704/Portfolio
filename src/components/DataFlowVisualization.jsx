@@ -48,7 +48,7 @@ function Particle({ index }) {
   )
 }
 
-function DataFlowVisualizationScene() {
+export function DataFlowVisualizationScene() {
   const lightRef = useRef(null)
 
   useFrame(({ clock }) => {
@@ -65,7 +65,7 @@ function DataFlowVisualizationScene() {
       <pointLight position={[-20, 10, 10]} intensity={0.8} color="#7B61FF" />
       
       {/* Particles */}
-      {Array.from({ length: 50 }).map((_, i) => (
+      {Array.from({ length: 15 }).map((_, i) => (
         <Particle key={i} index={i} />
       ))}
     </>

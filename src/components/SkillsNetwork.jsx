@@ -65,7 +65,7 @@ function SkillNode({ skill, index }) {
   )
 }
 
-function SkillsNetwork() {
+export function SkillsNetwork() {
   const groupRef = useRef(null)
 
   useFrame(({ clock }) => {

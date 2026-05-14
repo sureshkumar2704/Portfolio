@@ -3,7 +3,7 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { Sphere, Line } from '@react-three/drei'
 import * as THREE from 'three'
 
-function NeuralNetwork() {
+export function NeuralNetwork() {
   const groupRef = useRef(null)
   const particlesRef = useRef([])
   

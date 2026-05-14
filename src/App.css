@@ -222,6 +222,24 @@
   transition: all 0.3s;
 }
 
+/* ─── EXPERIENCE OS ─── */
+.experience-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.experience-shell::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(circle at center, black 35%, transparent 80%);
+  opacity: 0.35;
+}
+
 .social-icon:hover {
   color: #00F0FF;
   border-color: rgba(0, 240, 255, 0.3);
