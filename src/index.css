@@ -63,3 +63,11 @@
   33% { transform: translate(30px, -20px) scale(1.05); }
   66% { transform: translate(-20px, 15px) scale(0.95); }
 }
+
+/* ─── FLOATING PARTICLES ─── */
+@keyframes particleFloat {
+  0%, 100% { transform: translate(0, 0); opacity: 0.3; }
+  25% { transform: translate(15px, -25px); opacity: 0.6; }
+  50% { transform: translate(-10px, -40px); opacity: 0.2; }
+  75% { transform: translate(20px, -15px); opacity: 0.5; }
+}
